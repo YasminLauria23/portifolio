@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <div class="main">
+        <nav class="nav-menu">
+            <a href="index.html"> &#127968 Home</a>
+            <a href="sobre.html"> &#128513 Sobre</a>
+            <a href="portfolio.html"> &#128188 Portfolio</a>
+            <a href="novidades.html"> &#128196 Novidades</a>
+            <a href="contato.html"> &#128222 Contato</a>
+        </nav>
+    </div>
+
+    <section id="contato">
+        <h1 class="titulo-contato">Contato</h1>
+
+        <div class="contato-wrapper">
+
+            <div class="formulario">
+                <h2 class="subtitulo-contato fade-in">Me manda uma mensagem! 💙</h2>
+                <p class="texto-contato fade-in">Ficou com alguma dúvida ou quer trocar uma ideia? Me manda uma
+                    mensagem!</p>
+
+                <form action="https://formspree.io/f/xpqykonz" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"
+                            placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar mensagem</button>
+                </form>
+            </div>
+
+            <div class="redes-sociais">
+                <h2 class="subtitulo-contato">Me encontra por aí! 👇</h2>
+
+                <a href="https://github.com/YasminLauria23" target="_blank" class="rede">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://instagram.com/dev_lauria23" target="_blank" class="rede">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
