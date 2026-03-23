@@ -87,7 +87,6 @@ body {
   align-items: center;
   gap: 60px;
   min-height: 100vh;
-  /* pra ocupar a tela toda na altura */
   padding: 60px;
   background: #1a1a18;
 }
@@ -109,8 +108,8 @@ body {
 }
 
 .foto {
-  width: 350px;
-  height: 550px ;
+  width: 309px;
+  height: 550px;
   border-radius: 12px;
   max-width: 350px;
   max-height: 550px;
@@ -128,7 +127,6 @@ body {
   flex-direction: column;
   gap: 60px;
   min-height: 100vh;
-  /* pra ocupar a tela toda na altura */
   padding: 60px;
   background: #1a1a18;
 }
@@ -149,7 +147,6 @@ body {
 
 .lista-exp {
   list-style: none;
-  /* tira as bolinhas padrão */
   padding: 0;
 }
 
@@ -163,7 +160,7 @@ body {
 
 .lista-exp li::before {
   content: "· ";
-  /* adiciona o ponto na frente */
+
 }
 
 #habilidades {
@@ -184,7 +181,7 @@ body {
 .cards-hab {
   display: flex;
   flex-wrap: wrap;
-  /* quebra pra linha de baixo quando não cabe */
+
   gap: 35px;
 }
 
@@ -215,9 +212,9 @@ body {
 
 .card-hab i {
   font-size: 3rem;
-  /* tamanho do ícone */
+
   color: #0090a1;
-  /* cor do gradiente do menu */
+
 }
 
 #portfolio {
@@ -239,7 +236,7 @@ body {
 .cards-port {
   display: flex;
   flex-wrap: wrap;
-  /* quebra pra linha de baixo quando não cabe */
+
   gap: 30px;
 }
 
@@ -252,9 +249,9 @@ body {
   height: 250px;
   border-radius: 12px;
   overflow: hidden;
-  /* esconde o que sair do card */
+
   position: relative;
-  /* necessário para o overlay funcionar */
+
   border: 2px solid transparent;
 
   background-image:
@@ -265,12 +262,11 @@ body {
   background-clip: padding-box, border-box;
 
   transition: transform 0.3s;
-  /* animação ao passar o mouse */
 }
 
 .card-port:hover {
   transform: scale(1.03);
-  /* cresce um pouquinho ao passar o mouse */
+
 }
 
 .card-port img {
@@ -281,14 +277,11 @@ body {
 
 .overlay {
   position: absolute;
-  /* fica por cima da imagem */
   bottom: 0;
-  /* grudado na parte de baixo */
   left: 0;
   right: 0;
   padding: 20px;
   background: linear-gradient(transparent, #000000cc);
-  /* degradê escuro embaixo */
 }
 
 .overlay h3 {
@@ -389,7 +382,6 @@ body {
   font-family: Georgia, serif;
   outline: none;
   resize: none;
-  /* impede o usuário de redimensionar o textarea */
 }
 
 .campo input::placeholder,
@@ -450,32 +442,45 @@ body {
 }
 
 .fade-in {
-    opacity: 0;                          /* começa invisível */
-    transform: translateY(30px);         /* começa 30px abaixo */
-    transition: opacity 0.8s, transform 0.8s; /* animação suave */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
 }
 
 .fade-in.visivel {
-    opacity: 1;                          /* fica visível */
-    transform: translateY(0);            /* volta para o lugar */
+  opacity: 1;
+  transform: translateY(0);
 }
-/* TABLET - até 1024px */
-@media (max-width: 1024px) {
+
+/* NOTEBOOK MENOR */
+@media (max-width: 1200px) {
+
+  .name {
+    font-size: 4.2rem;
+  }
+
+  .subtitulo-home {
+    font-size: 1.6rem;
+  }
+
+  .texto-home {
+    font-size: 1rem;
+  }
+
+  #sobre {
+    gap: 30px;
+  }
+
+  #foto {
+    max-width: 280px;
+  }
 
   .sobre-mim,
   .titulo-exp,
   .titulo-hab,
   .titulo-port,
   .titulo-contato {
-    font-size: 5rem;
-  }
-
-  #sobre,
-  #curriculo,
-  #habilidades,
-  #portfolio,
-  #contato {
-    padding: 80px 40px;
+    font-size: 4rem;
   }
 }
 
@@ -519,4 +524,54 @@ body {
   .contato-wrapper {
     flex-direction: column;
   }
+
+  #sobre {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #foto {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 3.2rem;
+    line-height: 1;
+
+  }
+
+  #home {
+    padding: 100px 20px 40px 20px;
+    min-height: auto;
+  }
+
+  .perfil-home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .subtitulo-home {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .texto-home {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
 }
