@@ -92,9 +92,14 @@ body {
   background: #1a1a18;
 }
 
+.foto-sobre {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .texto {
   flex: 1;
-  /* o texto ocupa o espaço que sobrar */
 }
 
 .texto p {
@@ -103,12 +108,10 @@ body {
   color: #fff;
 }
 
-#foto {
+.foto {
   width: 450px;
-  height: 600px;
-  object-fit: cover;
-  /* a foto preenche o espaço sem distorcer */
-  flex-shrink: 0;
+  height: 700px ;
+  border-radius: 12px;
 }
 
 .sobre-mim {
