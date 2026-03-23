@@ -459,3 +459,50 @@ body {
     opacity: 1;                          /* fica visível */
     transform: translateY(0);            /* volta para o lugar */
 }
+
+@media (max-width: 1024px) {
+    .sobre-mim, .titulo-exp, .titulo-hab, 
+    .titulo-port, .titulo-contato {
+        font-size: 5rem;
+    }
+
+    #sobre, #curriculo, #habilidades, 
+    #portfolio, #contato {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        gap: 8px;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .sobre-mim, .titulo-exp, .titulo-hab,
+    .titulo-port, .titulo-contato {
+        font-size: 3rem;
+    }
+
+    #sobre, #curriculo, #habilidades,
+    #portfolio, #contato {
+        padding: 80px 20px 40px 20px;
+        min-height: auto;
+    }
+
+    #foto {
+        width: 100%;
+        max-height: 350px;
+    }
+
+    .card-port {
+        width: 100%;
+    }
+
+    .contato-wrapper {
+        flex-direction: column;
+    }
+}
