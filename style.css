@@ -112,6 +112,8 @@ body {
   width: 450px;
   height: 700px ;
   border-radius: 12px;
+  max-width: 450px;
+  max-height: 700px;
 }
 
 .sobre-mim {
